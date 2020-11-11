@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "110011005701",
+    "firebase_url": "https://edecora-c0f1e.firebaseio.com",
+    "project_id": "edecora-c0f1e",
+    "storage_bucket": "edecora-c0f1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110011005701:android:1fe9a33a683f8148f1556c",
+        "android_client_info": {
+          "package_name": "com.example.edecora"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110011005701-qcd6uvdcos8rln9fmcclgn7aa6mam5aq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcdLpnqKqF7YN-Cu1TSJ11cqMfiboRDGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "110011005701-qcd6uvdcos8rln9fmcclgn7aa6mam5aq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
