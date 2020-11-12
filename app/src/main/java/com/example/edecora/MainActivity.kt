@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         val BtnProfile = findViewById<ImageButton>(R.id.BtnProfile)
 
+        //create the intent to send the MyInformation activity via Profile button
         BtnProfile.setOnClickListener{
             val intent = Intent(applicationContext, MyInformation::class.java)
             startActivity(intent)
@@ -36,7 +37,6 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-
 //    override fun onCreateOptionsMenu(menu: Menu): Boolean {
 //        val inflater = menuInflater
 //        inflater.inflate(R.menu.menu_main, menu)
@@ -48,6 +48,4 @@ class MainActivity : AppCompatActivity() {
 //            val intent = Intent(applicationContext, MyInformation::class.java)
 //            startActivity(intent)
 //        }
-
-
 }

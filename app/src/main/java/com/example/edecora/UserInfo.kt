@@ -14,7 +14,7 @@ class UserInfo {
     var postalCodeTextView: String? = null
     var countryTextView: String? = null
 
-    // empty constructor - this is required!
+    // empty constructor
     constructor() {}
 
     constructor(id: String, fName: String, lName: String, emailTextView: String, addL1: String, addL2: String, cityTextView: String, provinceTextView: String, postalCodeTextView: String, countryTextView: String) {

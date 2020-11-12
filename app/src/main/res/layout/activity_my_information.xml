@@ -15,6 +15,7 @@
         android:textAlignment="center"
         android:textColor="@color/blue"
         android:textSize="@dimen/header"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -165,6 +166,7 @@
         android:layout_marginEnd="166dp"
         android:backgroundTint="@color/orange"
         android:text="@string/submitBtn"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.346"
         app:layout_constraintStart_toStartOf="parent"

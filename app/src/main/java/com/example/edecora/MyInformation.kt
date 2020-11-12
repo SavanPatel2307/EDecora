@@ -15,6 +15,7 @@ class MyInformation : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_my_information)
 
+        //creating variable for the each items
         val firstName = findViewById<TextView>(R.id.firstName)
         val lastName = findViewById<TextView>(R.id.lastName)
         val email = findViewById<TextView>(R.id.email)
@@ -26,17 +27,22 @@ class MyInformation : AppCompatActivity() {
         val country = findViewById<TextView>(R.id.country)
         val InfoSubmitBtn = findViewById<Button>(R.id.InfoSubmitBtn)
 
-
+        //creating onclick listner for submit button
         InfoSubmitBtn.setOnClickListener {
 
-        if ((TextUtils.isEmpty(firstName.text)) && (TextUtils.isEmpty(lastName.text)) && (TextUtils.isEmpty(email.text)) && (TextUtils.isEmpty(addLine1.text)) && (TextUtils.isEmpty(addLine2.text)) && (TextUtils.isEmpty(city.text)) && (TextUtils.isEmpty(province.text)) && (TextUtils.isEmpty(postalCode.text)) && (TextUtils.isEmpty(country.text))) {
+        //creating if else method for accurate sign in details
 
-            Toast.makeText(this, "Incomplete", Toast.LENGTH_LONG).show()
+        //validate inputs
+        if ((TextUtils.isEmpty(firstName.text)) || (TextUtils.isEmpty(lastName.text)) || (TextUtils.isEmpty(email.text)) || (TextUtils.isEmpty(addLine1.text)) || (TextUtils.isEmpty(addLine2.text)) || (TextUtils.isEmpty(city.text)) || (TextUtils.isEmpty(province.text)) || (TextUtils.isEmpty(postalCode.text)) || (TextUtils.isEmpty(country.text))) {
+
+            Toast.makeText(this, "Please Fill All Details", Toast.LENGTH_LONG).show()
         }
         else{
             val intent = Intent(applicationContext, MyProfile::class.java)
             startActivity(intent)
 
+
+                //Add all the inputs UserInfo class
                 val userInfo = UserInfo()
 
                 userInfo.fName = firstName.text.toString().trim()
@@ -65,6 +71,7 @@ class MyInformation : AppCompatActivity() {
                 postalCode.setText("")
                 country.setText("")
 
+                //toast message when user hot submit button
                 Toast.makeText(this, "Information Added", Toast.LENGTH_LONG).show()
             }
         }
