@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">EDecora</string>
+    <string name="InformationHeading">Please Enter Your Information</string>
+    <string name="add1Text">Address Line 1</string>
+    <string name="add2Text">Address Line 2</string>
+    <string name="cityText">City</string>
+    <string name="provinceText">Province</string>
+    <string name="postalText">Postal Code</string>
+    <string name="countryText">Country</string>
+    <string name="MyAccountBtn">My Account</string>
+    <string name="myAccount">My Account</string>
+    <string name="submitBtn">Submit</string>
+    <string name="profileBtn">Button</string>
+    <string name="mainHeader">Decoration By Occasions</string>
+    <string name="title_activity_my_profile">MyProfile</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
 </resources>
