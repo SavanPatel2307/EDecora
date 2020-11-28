@@ -33,7 +33,7 @@ class MyInformation : AppCompatActivity() {
         //creating if else method for accurate sign in details
 
         //validate inputs
-        if ((TextUtils.isEmpty(firstName.text)) || (TextUtils.isEmpty(lastName.text)) || (TextUtils.isEmpty(email.text)) || (TextUtils.isEmpty(addLine1.text)) || (TextUtils.isEmpty(addLine2.text)) || (TextUtils.isEmpty(city.text)) || (TextUtils.isEmpty(province.text)) || (TextUtils.isEmpty(postalCode.text)) || (TextUtils.isEmpty(country.text))) {
+        if ((TextUtils.isEmpty(firstName.text)) || (TextUtils.isEmpty(lastName.text)) || (TextUtils.isEmpty(email.text)) || (TextUtils.isEmpty(addLine1.text)) || (TextUtils.isEmpty(city.text)) || (TextUtils.isEmpty(province.text)) || (TextUtils.isEmpty(postalCode.text)) || (TextUtils.isEmpty(country.text))) {
 
             Toast.makeText(this, "Please Fill All Details", Toast.LENGTH_LONG).show()
         }

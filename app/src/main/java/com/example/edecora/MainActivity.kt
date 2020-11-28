@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import android.view.Menu
+import android.widget.ImageView
 import com.google.firebase.auth.FirebaseAuth
 
 
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         val BtnProfile = findViewById<ImageButton>(R.id.BtnProfile)
 
         //create the intent to send the MyInformation activity via Profile button
-        BtnProfile.setOnClickListener{
+        BtnProfile.setOnClickListener {
             val intent = Intent(applicationContext, MyInformation::class.java)
             startActivity(intent)
         }
@@ -27,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         //logout button
         val BtnLogout = findViewById<ImageButton>(R.id.BtnLogout)
 
-        BtnLogout.setOnClickListener{
+        BtnLogout.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
             finish()
 
@@ -36,7 +37,36 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val birthday = findViewById<ImageView>(R.id.birthday)
+
+        birthday.setOnClickListener {
+            val intent = Intent(applicationContext, BirthdayMain::class.java)
+            startActivity(intent)
+        }
+
+        val event = findViewById<ImageView>(R.id.event)
+
+        event.setOnClickListener {
+            val intent = Intent(applicationContext, EventMain::class.java)
+            startActivity(intent)
+        }
+
+        val anniversary = findViewById<ImageView>(R.id.anniversary)
+
+        anniversary.setOnClickListener {
+            val intent = Intent(applicationContext, AnniversaryMain::class.java)
+            startActivity(intent)
+        }
+
+        val wedding = findViewById<ImageView>(R.id.wedding)
+
+        wedding.setOnClickListener {
+            val intent = Intent(applicationContext, WeddingMain::class.java)
+            startActivity(intent)
+        }
+
     }
+
 //    override fun onCreateOptionsMenu(menu: Menu): Boolean {
 //        val inflater = menuInflater
 //        inflater.inflate(R.menu.menu_main, menu)
@@ -48,4 +78,5 @@ class MainActivity : AppCompatActivity() {
 //            val intent = Intent(applicationContext, MyInformation::class.java)
 //            startActivity(intent)
 //        }
+//    }
 }
