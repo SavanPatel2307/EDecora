@@ -65,6 +65,20 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val festival = findViewById<ImageView>(R.id.festival)
+
+        festival.setOnClickListener {
+            val intent = Intent(applicationContext, FestivalMain::class.java)
+            startActivity(intent)
+        }
+
+        val other = findViewById<ImageView>(R.id.other)
+
+        other.setOnClickListener {
+            val intent = Intent(applicationContext, OtherMain::class.java)
+            startActivity(intent)
+        }
+
     }
 
 //    override fun onCreateOptionsMenu(menu: Menu): Boolean {

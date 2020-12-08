@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EDecora">
-        <activity android:name=".WeddingMain"></activity>
+        <activity android:name=".ScrollApp"></activity>
+        <activity android:name=".OtherMain" />
+        <activity android:name=".FestivalMain" />
+        <activity android:name=".WeddingMain" />
         <activity android:name=".AnniversaryMain" />
         <activity android:name=".EventMain" />
         <activity android:name=".Cart" />
