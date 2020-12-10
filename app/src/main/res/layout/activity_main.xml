@@ -22,39 +22,35 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/birthday"
-        android:layout_width="154dp"
-        android:layout_height="121dp"
+        android:id="@+id/festival"
+        android:layout_width="149dp"
+        android:layout_height="114dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/event"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MainHeader"
-        app:srcCompat="@drawable/birthday" />
+        app:srcCompat="@drawable/ff" />
 
     <ImageView
         android:id="@+id/event"
-        android:layout_width="164dp"
-        android:layout_height="117dp"
+        android:layout_width="153dp"
+        android:layout_height="119dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="7dp"
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/birthday"
+        app:layout_constraintStart_toEndOf="@+id/festival"
         app:layout_constraintTop_toBottomOf="@+id/MainHeader"
         app:srcCompat="@drawable/event" />
 
     <ImageView
         android:id="@+id/anniversary"
-        android:layout_width="154dp"
-        android:layout_height="121dp"
+        android:layout_width="159dp"
+        android:layout_height="126dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/wedding"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/birthday"
+        app:layout_constraintTop_toBottomOf="@+id/festival"
         app:srcCompat="@drawable/anniversary" />
 
     <ImageView
@@ -62,7 +58,7 @@
         android:layout_width="154dp"
         android:layout_height="121dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/anniversary"
@@ -70,26 +66,24 @@
         app:srcCompat="@drawable/wedding" />
 
     <ImageView
-        android:id="@+id/festival"
+        android:id="@+id/birthday"
         android:layout_width="154dp"
         android:layout_height="100dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="15dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/other"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/anniversary"
-        app:srcCompat="@drawable/party" />
+        app:srcCompat="@drawable/birthday" />
 
     <ImageView
         android:id="@+id/other"
-        android:layout_width="151dp"
-        android:layout_height="94dp"
+        android:layout_width="159dp"
+        android:layout_height="100dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/festival"
+        app:layout_constraintStart_toEndOf="@+id/birthday"
         app:layout_constraintTop_toBottomOf="@+id/wedding"
         app:srcCompat="@drawable/other" />
 
@@ -97,8 +91,8 @@
         android:id="@+id/BtnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="65dp"
         android:backgroundTint="@color/orange"
         android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
@@ -109,21 +103,21 @@
         android:id="@+id/BtnProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="113dp"
         android:backgroundTint="@color/orange"
         android:clickable="true"
         app:layout_constraintEnd_toStartOf="@+id/BtnLogout"
-        app:layout_constraintHorizontal_bias="0.293"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/festival"
+        app:layout_constraintTop_toBottomOf="@+id/birthday"
         app:srcCompat="@drawable/profile" />
 
     <TextView
         android:id="@+id/ProfBtnTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="58dp"
+        android:layout_marginStart="68dp"
         android:text="Profile"
         android:textColor="@color/blue"
         android:textSize="20dp"
@@ -137,7 +131,7 @@
         android:id="@+id/LogoutBtnTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="53dp"
+        android:layout_marginEnd="62dp"
         android:text="Logout"
         android:textColor="@color/blue"
         android:textSize="20dp"
@@ -149,16 +143,16 @@
         android:id="@+id/BirthTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="76dp"
-        android:text="Birthday"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="90dp"
+        android:text="Festival"
         android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/birthday"
-        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintEnd_toStartOf="@+id/EventTextView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/birthday" />
+        app:layout_constraintTop_toTopOf="@+id/festival" />
 
     <TextView
         android:id="@+id/PartyTextView"
@@ -166,27 +160,28 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginTop="64dp"
-        android:text="Festival"
+        android:layout_marginEnd="55dp"
+        android:text="Birthday"
         android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/festival"
+        app:layout_constraintEnd_toStartOf="@+id/OtherTextView"
         app:layout_constraintHorizontal_bias="0.328"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/festival" />
+        app:layout_constraintTop_toTopOf="@+id/birthday" />
 
     <TextView
         android:id="@+id/AnniTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="55dp"
         android:text="Anniversary"
         android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/anniversary"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@+id/WeddingTextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/anniversary" />
 
@@ -194,30 +189,26 @@
         android:id="@+id/EventTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="68dp"
         android:text="Event"
         android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.907"
-        app:layout_constraintStart_toStartOf="@+id/event"
         app:layout_constraintTop_toTopOf="@+id/event" />
 
     <TextView
         android:id="@+id/OtherTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="65dp"
         android:text="Other"
         android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.893"
-        app:layout_constraintStart_toStartOf="@+id/other"
         app:layout_constraintTop_toTopOf="@+id/other" />
 
     <TextView
@@ -225,14 +216,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
-        android:layout_marginEnd="38dp"
+        android:layout_marginEnd="52dp"
         android:text="Wedding"
         android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toStartOf="@+id/wedding"
         app:layout_constraintTop_toTopOf="@+id/wedding" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

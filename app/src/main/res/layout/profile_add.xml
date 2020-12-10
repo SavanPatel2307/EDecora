@@ -2,21 +2,51 @@
 <android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameTextView"
+        android:paddingLeft="10dp"/>
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:id="@+id/profileTextView" />
+        android:id="@+id/emailTextView"
+        android:paddingLeft="10dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:id="@+id/lastNameTextView" />
+        android:id="@+id/addL1TextView"
+        android:paddingLeft="10dp"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cityTextView"
+        android:paddingLeft="10dp"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/countryTextView"
+        android:paddingLeft="10dp"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/provinceTextView"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/postalCodeTextView"
+        android:paddingLeft="10dp"/>
 
 </android.widget.LinearLayout>

@@ -1,21 +1,22 @@
 package com.example.edecora
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.Query
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.profile_add.view.*
-import kotlinx.android.synthetic.main.profile_add.*
+
 
 class MyProfile : AppCompatActivity() {
 
@@ -33,15 +34,23 @@ class MyProfile : AppCompatActivity() {
         profileRecyclerView.layoutManager = LinearLayoutManager(this)
 
         // query the db for address
-        val query = db.collection("UserInfo").orderBy("name", Query.Direction.ASCENDING)
+//        val query = db.collection("UserInfo").orderBy("fname", Query.Direction.ASCENDING)
+
+        val query = db.collection("UserInfo").whereEqualTo("uid", Firebase.auth.currentUser?.uid)
 
         // pass query results to RecyclerAdapter for display in RecyclerView
         val options = FirestoreRecyclerOptions.Builder<UserInfo>().setQuery(query, UserInfo::class.java).build()
         adapter = ProfileAdapter(options)
         profileRecyclerView.adapter = adapter
 
-        val HomeBtn = findViewById<Button>(R.id.HomeBtn)
-        HomeBtn.setOnClickListener{
+        val address = findViewById<Button>(R.id.address)
+        address.setOnClickListener{
+            val intent = Intent(applicationContext, MyInformation::class.java)
+            startActivity(intent)
+        }
+
+        val homeBtn = findViewById<Button>(R.id.homeBtn)
+        homeBtn.setOnClickListener{
             val intent = Intent(applicationContext, MainActivity::class.java)
             startActivity(intent)
         }
@@ -73,13 +82,19 @@ class MyProfile : AppCompatActivity() {
         }
 
         override fun onBindViewHolder(holder: ProfileViewHolder, position: Int, model: UserInfo) {
+            //get the Name & email from database Firestore
+            val mFirebaseAuth = FirebaseAuth.getInstance()
+            val mFirebaseUser = mFirebaseAuth.currentUser
 
-            val profileTextView = findViewById<TextView>(R.id.profileTextView)
-            val lastNameTextView = findViewById<TextView>(R.id.lastNameTextView)
-
-            //populate the address
-            holder.itemView.profileTextView.text = model.addL1
-            holder.itemView.lastNameTextView.text = model.addL2
+            holder.itemView.nameTextView.text = "Name: " + " " +mFirebaseUser!!.displayName
+            holder.itemView.emailTextView.text = "Email: " + " " +mFirebaseUser!!.email
+            holder.itemView.addL1TextView.text = "Address: " + " " +  model.addL1
+            holder.itemView.cityTextView.text = "City: " +  " " + model.cityTextView
+            holder.itemView.provinceTextView.text = "Province: " + " " + model.provinceTextView
+            holder.itemView.postalCodeTextView.text = "Postal Code: " + " " + model.postalCodeTextView
+            holder.itemView.countryTextView.text = "Country: " + " " + model.countryTextView
         }
     }
 }
+
+

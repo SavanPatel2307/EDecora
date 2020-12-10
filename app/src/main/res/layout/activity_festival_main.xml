@@ -33,7 +33,7 @@
         android:layout_width="152dp"
         android:layout_height="125dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="7dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addToCart25"
         app:srcCompat="@drawable/pumpkin" />
@@ -55,7 +55,7 @@
         android:layout_width="152dp"
         android:layout_height="125dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="7dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView21"
@@ -67,7 +67,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="42dp"
-        android:layout_marginTop="8dp"
         android:text="Christmas Tree"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,7 +77,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="8dp"
         android:text="Halloween Pumpking"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +86,6 @@
         android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="50dp"
         android:text="Skeleton Prop"
         android:textStyle="bold"
@@ -99,7 +96,6 @@
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="40dp"
         android:text="Christmas Props"
         android:textStyle="bold"
@@ -110,43 +106,92 @@
         android:id="@+id/addToCart25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="6dp"
         android:text="Add"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+        app:layout_constraintTop_toBottomOf="@+id/price25" />
 
     <Button
         android:id="@+id/addToCart27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="6dp"
         android:text="Add"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+        app:layout_constraintTop_toBottomOf="@+id/price28" />
 
     <Button
         android:id="@+id/addToCart26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="87dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="6dp"
         android:layout_marginEnd="51dp"
         android:text="Add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/addToCart25"
-        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+        app:layout_constraintTop_toBottomOf="@+id/price26" />
 
     <Button
         android:id="@+id/addToCart28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="87dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="6dp"
         android:layout_marginEnd="51dp"
         android:text="Add"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/addToCart27"
+        app:layout_constraintTop_toBottomOf="@+id/price3" />
+
+    <TextView
+        android:id="@+id/price25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="134dp"
+        android:text="$49.99"
+        android:textColor="@color/Price"
+        app:layout_constraintEnd_toStartOf="@+id/price26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/price28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="135dp"
+        android:text="$24.99"
+        android:textColor="@color/Price"
+        app:layout_constraintEnd_toStartOf="@+id/price3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/price26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="73dp"
+        android:text="$19.99"
+        android:textColor="@color/Price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/price3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="72dp"
+        android:text="$39.99"
+        android:textColor="@color/Price"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView26" />
 </androidx.constraintlayout.widget.ConstraintLayout>
