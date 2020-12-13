@@ -74,7 +74,7 @@ class MyProfile : AppCompatActivity() {
     private inner class ProfileViewHolder internal constructor(private val view: View) : RecyclerView.ViewHolder(view) {}
 
     private inner class ProfileAdapter internal constructor(options: FirestoreRecyclerOptions<UserInfo>) :
-        FirestoreRecyclerAdapter<UserInfo, ProfileViewHolder>(options) {
+            FirestoreRecyclerAdapter<UserInfo, ProfileViewHolder>(options) {
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProfileViewHolder {
 
             val view = LayoutInflater.from(parent.context).inflate(R.layout.profile_add, parent, false)
@@ -96,5 +96,3 @@ class MyProfile : AppCompatActivity() {
         }
     }
 }
-
-

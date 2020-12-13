@@ -29,16 +29,16 @@ class MyInformation : AppCompatActivity() {
         //creating onclick listner for submit button
         InfoSubmitBtn.setOnClickListener {
 
-        //creating if else method for accurate sign in details
+            //creating if else method for accurate sign in details
 
-        //validate inputs
-        if ( (TextUtils.isEmpty(addLine1.text)) || (TextUtils.isEmpty(city.text)) || (TextUtils.isEmpty(province.text)) || (TextUtils.isEmpty(postalCode.text)) || (TextUtils.isEmpty(country.text))) {
+            //validate inputs
+            if ( (TextUtils.isEmpty(addLine1.text)) || (TextUtils.isEmpty(city.text)) || (TextUtils.isEmpty(province.text)) || (TextUtils.isEmpty(postalCode.text)) || (TextUtils.isEmpty(country.text))) {
 
-            Toast.makeText(this, "Please Fill All Details", Toast.LENGTH_LONG).show()
-        }
-        else{
-            val intent = Intent(applicationContext, MyProfile::class.java)
-            startActivity(intent)
+                Toast.makeText(this, "Please Fill All Details", Toast.LENGTH_LONG).show()
+            }
+            else{
+                val intent = Intent(applicationContext, MyProfile::class.java)
+                startActivity(intent)
 
                 //Add all the inputs UserInfo class
                 val userInfo = UserInfo()

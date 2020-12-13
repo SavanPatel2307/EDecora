@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.ImageView
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_festival_main.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 @Suppress("UNREACHABLE_CODE")
@@ -20,6 +22,13 @@ class MainActivity : AppCompatActivity() {
         BtnProfile.setOnClickListener {
             val intent = Intent(applicationContext, MyProfile::class.java)
             startActivity(intent)
+        }
+
+        cartBtn.setOnClickListener{
+            val intent = Intent(applicationContext, Cart::class.java)
+            startActivity(intent)
+
+
         }
 
         //logout button
