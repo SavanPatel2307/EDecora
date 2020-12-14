@@ -130,7 +130,7 @@
         android:layout_marginTop="6dp"
         android:text="Add"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/price3" />
+        app:layout_constraintTop_toBottomOf="@+id/price50" />
 
     <Button
         android:id="@+id/addToCart4"
@@ -162,18 +162,18 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="65dp"
         android:layout_marginTop="5dp"
-        android:text="$9.99"
+        android:text="9.99"
         android:textColor="@color/Price"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
-        android:id="@+id/price3"
+        android:id="@+id/price50"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="65dp"
         android:layout_marginTop="5dp"
-        android:text="$9.99"
+        android:text="9.99"
         android:textColor="@color/Price"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
@@ -182,11 +182,13 @@
         android:id="@+id/price2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="78dp"
-        android:text="$6.99"
+        android:text="6.99"
         android:textColor="@color/Price"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/price1"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
@@ -196,10 +198,10 @@
         android:layout_marginStart="145dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="78dp"
-        android:text="$6.99"
+        android:text="6.99"
         android:textColor="@color/Price"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/price3"
+        app:layout_constraintStart_toEndOf="@+id/price50"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

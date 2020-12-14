@@ -4,67 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyProfile"
-    >
-
+    tools:context=".CheckOut">
 
     <TextView
-        android:id="@+id/cartMainHeader"
+        android:id="@+id/checkoutHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Cart"
+        android:text="Order Summary"
         android:textColor="@color/blue"
         android:textSize="@dimen/header"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/cartRecyclerView"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/thankyouCheckout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="132dp"
+        android:text="Thank you for your order!"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cartMainHeader" />
+        app:layout_constraintTop_toBottomOf="@+id/checkoutHeader" />
+
+    <TextView
+        android:id="@+id/thankyouCheckout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Your Order will be deliverd in 48 hours"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thankyouCheckout" />
+
+    <TextView
+        android:id="@+id/totalCheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thankyouCheckout2" />
 
     <Button
-        android:id="@+id/btnCheckout"
+        android:id="@+id/homeCheckout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="410dp"
+        android:layout_marginTop="30dp"
         android:backgroundTint="@color/orange"
-        android:text="CheckOut"
+        android:text="Home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cartMainHeader" />
-
-    <TextView
-        android:id="@+id/textViewTotal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="375dp"
-        android:layout_marginEnd="55dp"
-        android:text="Total :"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/btnCheckout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cartMainHeader" />
-
-    <TextView
-        android:id="@+id/cartTotal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="375dp"
-        android:text=""
-        android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/textViewTotal"
-        app:layout_constraintTop_toBottomOf="@+id/cartMainHeader" />
-
-
+        app:layout_constraintTop_toBottomOf="@+id/totalCheckout" />
 </androidx.constraintlayout.widget.ConstraintLayout>

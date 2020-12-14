@@ -154,7 +154,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="75dp"
         android:layout_marginTop="5dp"
-        android:text="$6.99"
+        android:text="6.99"
         android:textColor="@color/Price"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView28" />
@@ -166,7 +166,7 @@
         android:layout_marginStart="131dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="82dp"
-        android:text="$14.99"
+        android:text="14.99"
         android:textColor="@color/Price"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/price31"
@@ -178,7 +178,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="73dp"
         android:layout_marginTop="5dp"
-        android:text="$9.99"
+        android:text="9.99"
         android:textColor="@color/Price"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView30" />
@@ -189,7 +189,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="78dp"
-        android:text="$6.99"
+        android:text="6.99"
         android:textColor="@color/Price"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView31" />
